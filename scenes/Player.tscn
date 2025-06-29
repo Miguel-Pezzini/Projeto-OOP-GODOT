@@ -1,0 +1,180 @@
+[gd_scene load_steps=29 format=3 uid="uid://c6xxnp8w3p8gw"]
+
+[ext_resource type="Script" uid="uid://ux5mc7ph2umy" path="res://scripts/Player.cs" id="1_f50pn"]
+[ext_resource type="Texture2D" uid="uid://t0lvuqc688rm" path="res://animation/idle-1.png" id="2_ucfvk"]
+[ext_resource type="Texture2D" uid="uid://dcmf862g0kewl" path="res://animation/idle-2.png" id="3_2dyae"]
+[ext_resource type="Texture2D" uid="uid://bb4bxvgo2yn20" path="res://animation/idle-3.png" id="4_2u5n8"]
+[ext_resource type="Texture2D" uid="uid://dhw0p3sjvct28" path="res://animation/idle-4.png" id="5_73nau"]
+[ext_resource type="Texture2D" uid="uid://jxgengvbc346" path="res://animation/walk-1.png" id="6_skrk8"]
+[ext_resource type="Texture2D" uid="uid://254261r8osbo" path="res://animation/jump-1.png" id="6_ye16i"]
+[ext_resource type="Texture2D" uid="uid://buoi2khd8tohv" path="res://animation/jump-2.png" id="7_75u2t"]
+[ext_resource type="Texture2D" uid="uid://cobsy3b0p1jfa" path="res://animation/walk-2.png" id="7_ye16i"]
+[ext_resource type="Texture2D" uid="uid://bgqlln2ii6y8h" path="res://animation/jump-3.png" id="8_7qa1u"]
+[ext_resource type="Texture2D" uid="uid://bipqf8apgoow8" path="res://animation/walk-3.png" id="8_75u2t"]
+[ext_resource type="Texture2D" uid="uid://mnqw3qfqy3er" path="res://animation/walk-4.png" id="9_7qa1u"]
+[ext_resource type="Texture2D" uid="uid://c5ltdmwx8ajbh" path="res://animation/jump-4.png" id="9_8gu1l"]
+[ext_resource type="Texture2D" uid="uid://c6g64km8pcivl" path="res://animation/walk-5.png" id="10_8gu1l"]
+[ext_resource type="Texture2D" uid="uid://dq2wm0i2y1oke" path="res://animation/jump-5.png" id="10_jsgy1"]
+[ext_resource type="Texture2D" uid="uid://dph7melglqg5" path="res://animation/walk-7.png" id="11_jsgy1"]
+[ext_resource type="Texture2D" uid="uid://b0vb1wr7e1dn8" path="res://animation/walk-8.png" id="12_el80s"]
+[ext_resource type="Texture2D" uid="uid://cl1uqy8m1y1x8" path="res://animation/walk-9.png" id="13_oxcm1"]
+[ext_resource type="Texture2D" uid="uid://cvhm6us6gsonb" path="res://animation/walk-10.png" id="14_ltww1"]
+[ext_resource type="Texture2D" uid="uid://dujd2bdmronxx" path="res://animation/walk-11.png" id="15_a7mna"]
+[ext_resource type="Texture2D" uid="uid://bb2q1sgy5jlp1" path="res://animation/walk-13.png" id="16_lmwkj"]
+[ext_resource type="Texture2D" uid="uid://0m8t5ecjokiq" path="res://animation/walk-14.png" id="17_k3r5w"]
+[ext_resource type="Texture2D" uid="uid://d312amuj0wxh1" path="res://animation/walk-15.png" id="18_1rslu"]
+[ext_resource type="Texture2D" uid="uid://d1t2scho6i6xw" path="res://animation/walk-16.png" id="19_3uyxa"]
+[ext_resource type="Texture2D" uid="uid://chvl4ylbcot62" path="res://animation/gem-1.png" id="25_viqgg"]
+[ext_resource type="FontFile" uid="uid://doagtw63qcke5" path="res://PixelOperator8-Bold.ttf" id="26_fgkxt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8icv6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ucfvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2dyae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2u5n8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_73nau")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_ye16i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_75u2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7qa1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8gu1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jsgy1")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_skrk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ye16i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_75u2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7qa1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8gu1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jsgy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_el80s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_oxcm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ltww1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_a7mna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_lmwkj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_k3r5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_1rslu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3uyxa")
+}],
+"loop": false,
+"name": &"Walk",
+"speed": 10.0
+}]
+
+[sub_resource type="CSharpScript" id="CSharpScript_viqgg"]
+script/source = "using Godot;
+using System;
+
+public partial class HUD : CanvasLayer
+{
+	private Label gemLabel;
+
+	public override void _Ready()
+	{
+		gemLabel = GetNode<Label>(\"HBoxContainer/Label\");
+		UpdateGemCount(0);
+	}
+
+	public void UpdateGemCount(int count)
+	{
+		GD.Print(count);
+		gemLabel.Text = count.ToString();
+	}
+}
+"
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+position = Vector2(171, 78)
+script = ExtResource("1_f50pn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(19, -14)
+sprite_frames = SubResource("SpriteFrames_8icv6")
+animation = &"Jump"
+autoplay = "Idle"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(9, -13, 10, -14, 12, -14, 13, -12, 14, -12, 14, -15, 15, -16, 17, -18, 18, -19, 23, -19, 23, -15, 29, -10, 29, -3, 26, -1, 28, 0, 28, 3, 25, 4, 27, 6, 29, 6, 30, 6, 30, 9, 9, 9, 9, 6, 11, 5, 13, 5, 13, 4, 11, 4, 7, -1, 7, -5, 6, -7, 9, -7)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(23, -36)
+zoom = Vector2(3, 3)
+limit_left = 0
+limit_top = -130
+limit_bottom = 170
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = SubResource("CSharpScript_viqgg")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD"]
+offset_right = 100.0
+offset_bottom = 100.0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="HUD/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("25_viqgg")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="HUD/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("26_fgkxt")
+theme_override_font_sizes/font_size = 50
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
