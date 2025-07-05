@@ -1,0 +1,148 @@
+[gd_scene load_steps=4 format=3 uid="uid://chkj36ub5qve7"]
+
+[ext_resource type="Texture2D" uid="uid://d4hjvqyb8mlmn" path="res://menu/images/back.png" id="1_eg082"]
+[ext_resource type="Script" uid="uid://b0ip2d12ft6m8" path="res://menu/scripts/Menu.cs" id="1_gxjkw"]
+[ext_resource type="FontFile" uid="uid://doagtw63qcke5" path="res://PixelOperator8-Bold.ttf" id="2_jgsm4"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 576.0
+offset_top = 322.0
+offset_right = 576.0
+offset_bottom = 322.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gxjkw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -575.0
+offset_top = -322.0
+offset_right = 578.0
+offset_bottom = 324.0
+texture = ExtResource("1_eg082")
+
+[node name="MainMenu" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -762.0
+offset_top = -484.0
+offset_right = -610.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.5, 2.5)
+alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="MainMenu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jgsm4")
+text = "JOGAR"
+
+[node name="ButtonAbout" type="Button" parent="MainMenu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jgsm4")
+text = "SOBRE"
+
+[node name="ButtonControls" type="Button" parent="MainMenu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jgsm4")
+text = "CONTROLES"
+
+[node name="ButtonLeave" type="Button" parent="MainMenu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jgsm4")
+text = "SAIR"
+
+[node name="AboutMenu" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -179.0
+offset_top = -125.0
+offset_right = 179.0
+offset_bottom = 135.0
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="Label" type="Label" parent="AboutMenu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jgsm4")
+theme_override_font_sizes/font_size = 30
+text = "SOBRE"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="AboutMenu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jgsm4")
+text = "AUTORES:
+MIGUEL PEZZINI KUHR
+RAFAEL DE SOUZA BARBOSA"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Label3" type="Label" parent="AboutMenu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jgsm4")
+text = "05/07/2025"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Label4" type="Label" parent="AboutMenu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jgsm4")
+text = "Universidade do Vale do Itajaí"
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="ButtonBack" type="Button" parent="AboutMenu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jgsm4")
+text = "VOLTAR"
+flat = true
+
+[node name="ControlMenu" type="VBoxContainer" parent="."]
+offset_left = -179.0
+offset_top = -125.0
+offset_right = 179.0
+offset_bottom = 135.0
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="Label" type="Label" parent="ControlMenu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jgsm4")
+theme_override_font_sizes/font_size = 30
+text = "CONTROLES"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ControlMenu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jgsm4")
+text = "KEYBOARD
+----------
+ESQUERDA: <-
+DIREITA: ->
+PULO: Espaço"
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="ButtonBack" type="Button" parent="ControlMenu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jgsm4")
+text = "VOLTAR"
+flat = true

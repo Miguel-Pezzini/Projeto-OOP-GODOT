@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://nd1h06eyyf00"]
+
+[ext_resource type="Texture2D" uid="uid://b5f3q8w1jh6qt" path="res://mapTwo/tilesets/spikes-top.png" id="1_5afp4"]
+[ext_resource type="Script" uid="uid://2h5ui5clkhrd" path="res://mapTwo/scripts/TopSunnylandSpike.cs" id="1_qb5wb"]
+[ext_resource type="Texture2D" uid="uid://cvym07p6b7yxw" path="res://mapTwo/images/background_stone.png" id="2_qb5wb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f2b3p"]
+size = Vector2(16, 16)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_qb5wb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_f2b3p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(5.36442e-07, -0.325)
+scale = Vector2(1.06667, 1.70556)
+texture = ExtResource("1_5afp4")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = -8
+position = Vector2(1.2517e-06, 0)
+scale = Vector2(0.013617, 0.0212483)
+texture = ExtResource("2_qb5wb")

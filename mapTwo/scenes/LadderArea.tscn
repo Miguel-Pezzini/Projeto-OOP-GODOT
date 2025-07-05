@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmv2x2tr4lr3h"]
+
+[ext_resource type="Script" uid="uid://deh3hngwqnoib" path="res://mapTwo/scripts/LadderArea.cs" id="1_svyw1"]
+
+[node name="LadderArea" type="Area2D"]
+script = ExtResource("1_svyw1")
