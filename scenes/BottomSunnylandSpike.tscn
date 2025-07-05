@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://nl1vhf5pasbp"]
+
+[ext_resource type="Script" uid="uid://brgfoyyxc50vu" path="res://scripts/SunnylandSpike.cs" id="1_sxhog"]
+[ext_resource type="Texture2D" uid="uid://chuep0oq7r4k0" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/SunnyLand/Props/spikes.png" id="2_1jfjo"]
+[ext_resource type="Texture2D" uid="uid://cvym07p6b7yxw" path="res://images/background_stone.png" id="3_rt3yg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j1m4f"]
+size = Vector2(17, 16)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_sxhog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_j1m4f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.5, -1.19209e-07)
+scale = Vector2(1.13333, 1.6)
+texture = ExtResource("2_1jfjo")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = -8
+position = Vector2(-0.5, 1.19209e-07)
+scale = Vector2(0.0144681, 0.0212483)
+texture = ExtResource("3_rt3yg")

@@ -152,7 +152,7 @@ polygon = PackedVector2Array(9, -13, 10, -14, 12, -14, 13, -12, 14, -12, 14, -15
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(23, -36)
-zoom = Vector2(3, 3)
+zoom = Vector2(1.5, 1.5)
 limit_left = 0
 limit_top = -130
 limit_bottom = 170
