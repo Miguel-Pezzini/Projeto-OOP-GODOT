@@ -17,7 +17,6 @@ public partial class Player : CharacterBody2D
 	private Vector2 velocity = Vector2.Zero;
 	private AnimatedSprite2D animatedSprite;
 
-	public int GemCount { get; private set; } = 0;
 	private int jumpCount = 0;
 	private bool isOnLadder = false;
 	
@@ -41,13 +40,15 @@ public partial class Player : CharacterBody2D
 	public override void _Ready()
 	{
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+		
+		var label = GetNode<Label>("HUD/HBoxContainer/Label");
+		label.Text = Global.GetGemasDoMapaAtual().ToString();
 	}
 
 	public override void _PhysicsProcess(double delta)
 	{
 		float deltaTime = (float)delta;
 
-		// Atualiza timer de tiro
 		if (currentState == PlayerState.Shooting)
 		{
 			shootTimer -= deltaTime;
@@ -194,11 +195,15 @@ public partial class Player : CharacterBody2D
 		GetParent().AddChild(fireball);
 	}
 
-	public void AddGem()
-	{
-		GemCount++;
+	public void AddGem() {
+		Global.AddGema();
 		var label = GetNode<Label>("HUD/HBoxContainer/Label");
-		label.Text = GemCount.ToString();
+		label.Text = Global.GetGemasDoMapaAtual().ToString();
+	}
+
+	public void ResetHUD() {
+		var label = GetNode<Label>("HUD/HBoxContainer/Label");
+		label.Text = Global.GetGemasDoMapaAtual().ToString();
 	}
 
 	public void SetIsOnLadder(bool value)

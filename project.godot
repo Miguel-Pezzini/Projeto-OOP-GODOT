@@ -14,6 +14,10 @@ config/name="TRAB_OOP"
 run/main_scene="uid://chkj36ub5qve7"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 
+[autoload]
+
+Global="*res://core/scripts/Global.cs"
+
 [dotnet]
 
 project/assembly_name="TRAB_OOP"

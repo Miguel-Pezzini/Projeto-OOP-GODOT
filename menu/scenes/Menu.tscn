@@ -18,6 +18,7 @@ grow_vertical = 2
 script = ExtResource("1_gxjkw")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = -575.0
 offset_top = -322.0
 offset_right = 578.0
@@ -113,6 +114,7 @@ text = "VOLTAR"
 flat = true
 
 [node name="ControlMenu" type="VBoxContainer" parent="."]
+layout_mode = 0
 offset_left = -179.0
 offset_top = -125.0
 offset_right = 179.0
@@ -134,9 +136,12 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_jgsm4")
 text = "KEYBOARD
 ----------
-ESQUERDA: <-
-DIREITA: ->
-PULO: Espaço"
+ESQUERDA - A
+DIREITA - D
+SUBIR ESCADA - W
+PULO - Espaço
+CORRER - SHIFT
+ATIRAR - R"
 horizontal_alignment = 1
 autowrap_mode = 3
 uppercase = true

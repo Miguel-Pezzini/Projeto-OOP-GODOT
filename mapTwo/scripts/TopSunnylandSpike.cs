@@ -12,7 +12,6 @@ public partial class TopSunnylandSpike : Area2D
 	{
 		if (body.IsInGroup("player"))
 		{
-			GD.Print("entrou");
 			GetTree().ReloadCurrentScene();
 		}
 	}

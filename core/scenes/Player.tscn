@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://c6xxnp8w3p8gw"]
+[gd_scene load_steps=48 format=3 uid="uid://c6xxnp8w3p8gw"]
 
 [ext_resource type="Script" uid="uid://ux5mc7ph2umy" path="res://core/scripts/Player.cs" id="1_f50pn"]
 [ext_resource type="Texture2D" uid="uid://dqony2qqj8xs8" path="res://core/animation/player-climb/climb-1.png" id="2_8yq5r"]
@@ -13,7 +13,9 @@
 [ext_resource type="Texture2D" uid="uid://jxgengvbc346" path="res://core/animation/player-walk/walk-1.png" id="6_skrk8"]
 [ext_resource type="Texture2D" uid="uid://254261r8osbo" path="res://core/animation/player-jump/jump-1.png" id="6_ye16i"]
 [ext_resource type="Texture2D" uid="uid://buoi2khd8tohv" path="res://core/animation/player-jump/jump-2.png" id="7_75u2t"]
+[ext_resource type="Texture2D" uid="uid://b4afrvm4wliib" path="res://core/animation/player-dead/hurt-1.png" id="7_egm20"]
 [ext_resource type="Texture2D" uid="uid://cobsy3b0p1jfa" path="res://core/animation/player-walk/walk-2.png" id="7_ye16i"]
+[ext_resource type="Texture2D" uid="uid://cbtfxx2ovsuvx" path="res://core/animation/player-dead/hurt-2.png" id="8_5xilt"]
 [ext_resource type="Texture2D" uid="uid://bgqlln2ii6y8h" path="res://core/animation/player-jump/jump-3.png" id="8_7qa1u"]
 [ext_resource type="Texture2D" uid="uid://bipqf8apgoow8" path="res://core/animation/player-walk/walk-3.png" id="8_75u2t"]
 [ext_resource type="Texture2D" uid="uid://mnqw3qfqy3er" path="res://core/animation/player-walk/walk-4.png" id="9_7qa1u"]
@@ -62,6 +64,17 @@ animations = [{
 "loop": false,
 "name": &"Climb",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_egm20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5xilt")
+}],
+"loop": true,
+"name": &"Dead",
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -224,10 +237,9 @@ FireballScene = ExtResource("2_bcaf1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(19, -14)
 sprite_frames = SubResource("SpriteFrames_8icv6")
-animation = &"Shot"
+animation = &"Dead"
 autoplay = "Idle"
-frame = 3
-frame_progress = 1.0
+frame_progress = 0.850495
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 visible = false
